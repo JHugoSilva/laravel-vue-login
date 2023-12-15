@@ -10,11 +10,11 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/sass/app.scss', 'resources/js/app.js'])
     </head>
     <body class="antialiased">
         <div id="app">
-            <router-view/>
+            <app-component/>
         </div>
     </body>
 </html>

@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from '../components/Index.vue'
+import Login from '../auth/login.vue'
 import notFound from '../components/NotFound.vue'
-import App from '../components/App.vue';
 
 const history = createWebHistory();
 
@@ -11,9 +11,10 @@ const routes = [
         component: Index
     },
     {
-        path: '/app',
-        component: App
-    },
+        path: '/loginvue',
+        component: Login
+    }
+    ,
     {
         path: '/:pathMatch(.*)*',
         component: notFound

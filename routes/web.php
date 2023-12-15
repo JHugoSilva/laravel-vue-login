@@ -14,3 +14,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
 Route::get('/{pathMatch}', function(){
     return view('welcome');
 })->where('pathMatch','.*');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
